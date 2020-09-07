@@ -53,7 +53,8 @@ public class SQLite {
 				"	\"priority\"	TEXT,\r\n" + 
 				"	\"user_id\"	INTEGER,\r\n" + 
 				"	\"description\"	TEXT,\r\n" + 
-				"	FOREIGN KEY(\"project_id\") REFERENCES \"projects\"(\"id\"),\r\n" + 
+				"	FOREIGN KEY(\"project_id\") REFERENCES \"projects\"(\"id\"),\r\n" +
+				"	FOREIGN KEY(\"user_id\") REFERENCES \"users\"(\"id\"),\r\n" + 
 				"	PRIMARY KEY(\"id\")\r\n" + 
 				")";
 		
